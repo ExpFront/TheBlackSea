@@ -1,0 +1,240 @@
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "ui.totop.css";
+
+@import 'font-awesome.min.css';
+
+//Variables STARTS
+$button-colors: #afb1b4;
+$green: #00d089;
+//Variables ENDS
+
+//Header STARTS
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 100px;
+  padding: 30px;
+  background-color: #55adb7;
+}
+
+nav {
+  margin-top: 5px;
+
+  ul {
+    list-style: none;
+
+    .slash {
+      color: white;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      
+      a {
+        display: block;
+        font-size: 18px;
+        font-weight: 300;
+        color: #dce3e4;
+
+        &:hover {
+          text-decoration: none;
+          color: white;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}
+
+//Header ENDS
+//section-intro STARTS
+.section-intro {
+  height: 575px;
+  padding-top: 130px;
+  background-image: url("../images/backgrounds/banner.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-bottom: 35px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #e4e4e4;
+}
+
+.button-intro {
+  padding: 3px 60px;
+  font-size: 30px;
+  font-weight: 300;
+  color: $button-colors;
+  background-color: rgba(255, 255, 255, .06);
+  border: 3px solid $button-colors;
+  border-radius: 8px;
+
+  &:hover {
+    color: #55adb7;
+    border-color: #55adb7;
+    transition: 500ms;
+  }
+}
+
+//section-intro  ENDS
+//section-features STARTS
+
+.section-features {
+  padding: 70px 0;
+
+  h2 {
+    margin-bottom: 90px;
+    font-weight: 300;
+    color: #4c505d;
+    line-height: 1.8em;
+  }
+
+  p {
+    margin-bottom: 70px;
+    color: #4c505d;
+  }
+
+  .fa {
+    color: #5eb6c4;
+  }
+}
+
+//section-features ENDS
+//section-comment STARTS
+
+.section-comment {
+  padding: 100px 0;
+  background-color: $green;
+
+  h2 {
+    margin: 0px;
+    color: #e4e4e4;
+  }
+  
+  img {
+    margin-top: 10px;
+  }
+
+  .fa {
+    font-size: 1000%;
+    color: #33d9a1;
+  }
+
+  p {
+    margin-top: 60px;
+    color: #fff;
+    line-height: 1.8em;
+    word-spacing: 3px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+//section-comment ENDS
+//section-map STARTS
+
+.section-map {
+  position: relative;
+  
+  .block-form {
+    position: absolute;
+    top: 12%;
+    background-color: rgba( 255, 255, 255, 0.8);
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .btn-submit {
+    width: 66px;
+    height: 67px;
+    margin-top: 20px;
+    background: url(../images/yes.png) no-repeat;
+    border: none;
+    
+    &:focus {
+      outline: 0;     
+      outline-style: none;     
+      outline-width: 0;  
+    }
+  }
+
+}
+//section-map ENDS
+//footer STARTS
+
+footer {
+  padding: 20px;
+  background-color: $green;
+  color: #fff;
+}
+
+//media-queries STARTS
+@media all and (min-width: 1024px) {
+  .block-form {
+    left: 34%;
+    padding: 100px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .block-form {
+    left: 30%;
+    padding: 80px;
+  }
+}
+@media all and (max-width: 900px) {
+  .block-form {
+    padding: 70px;
+  }
+}
+@media all and (max-width: 768px) {
+  .block-form {
+    padding: 55px 60px;
+  }
+}
+@media all and (max-width: 550px ) {
+  .block-form {
+    left: 20%;
+    padding: 55px 60px;
+  }
+}
+@media all and (max-width: 448px) {
+  .block-form {
+    left: 10%;
+  }
+}
+//media-queries ENDS
+//OTHER
+.fa.fa-bars {
+  color: #55adb7;
+}
+
+button {
+  background-color: #fff;
+  border: 2px solid #fff; 
+  border-radius: 10px;
+  
+  &:focus {
+    outline: 0;     
+    outline-style: none;     
+    outline-width: 0;
+  }
+}
+
+
+
