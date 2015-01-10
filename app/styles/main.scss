@@ -23,7 +23,6 @@ header {
   height: 100px;
   padding: 30px;
   background-color: #55adb7;
-  
 }
 
 nav {
@@ -153,7 +152,6 @@ h1 {
   
   .block-form {
     position: absolute;
-    top: 12%;
     background-color: rgba( 255, 255, 255, 0.8);
   }
 
@@ -186,14 +184,29 @@ footer {
 }
 
 //media-queries STARTS
-@media all and (min-width: 1024px) {
+@media all and (min-width: 2220px) {
   .block-form {
+    top: 0%;
+    left: 44;
+  }
+}
+@media all and (min-width: 1260px) and (min-width: 2220px){
+  .block-form {
+    top: 3%;
+    left: 40%;
+    padding: 120px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1260px) {
+  .block-form {
+    top: 8%;
     left: 34%;
     padding: 100px;
   }
 }
 @media all and (max-width: 1024px) {
   .block-form {
+    top: 12%;
     left: 30%;
     padding: 80px;
   }
@@ -219,9 +232,17 @@ footer {
     left: 10%;
   }
 }
+@media all and (max-width: 350px) {
+  .block-form {
+    top: 15%;
+    left: 1%;
+    padding: 50px 55px;
+  }
+}
 //media-queries ENDS
 //OTHER
 .fa.fa-bars {
+  margin: 5px 2px;
   color: #55adb7;
 }
 
