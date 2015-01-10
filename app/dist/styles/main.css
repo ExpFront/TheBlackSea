@@ -6921,7 +6921,7 @@ footer {
 @media all and (max-width: 350px) {
   .block-form {
     top: 15%;
-    left: 1%;
+    left: 1.5%;
     padding: 50px 55px;
   }
 }
