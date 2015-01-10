@@ -6775,15 +6775,31 @@ nav ul li a:hover {
 }
 
 .section-intro {
-  height: 575px;
-  padding-top: 130px;
   background-image: url("../images/backgrounds/banner.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
 }
 
+@media all and (min-width: 1076px) {
+  .section-intro {
+    height: 575px;
+    padding-top: 130px;
+  }
+}
+@media all and (min-width: 350px) {
+  .section-intro {
+    min-height: 400px;
+    padding-top: 120px;
+  }
+}
+@media all and (max-width: 350px) {
+  .section-intro {
+    min-height: 450px;
+    padding-top: 50px;
+  }
+}
 h1 {
   margin-bottom: 35px;
   font-size: 48px;
