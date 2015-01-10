@@ -5,14 +5,14 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/main.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.rubySass({
       style: 'expanded',
       precision: 10
     }))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
-    .pipe(gulp.dest('.tmp/styles'));
+    .pipe(gulp.dest('app/dist/styles'));
 });
 
 gulp.task('jshint', function () {
@@ -121,6 +121,7 @@ gulp.task('watch', ['connect'], function () {
 gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
+
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
