@@ -6738,9 +6738,15 @@ body {
 }
 
 header {
+  position: relative;
   height: 100px;
   padding: 30px;
   background-color: #55adb7;
+}
+header .header-navbar {
+  position: absolute;
+  right: 5%;
+  top: 30%;
 }
 
 nav {
